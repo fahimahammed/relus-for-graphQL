@@ -12,12 +12,18 @@ const typeDefs = gql`
   }
 
   type Group {
-    Image
-    [Car]
-    [GroupFeatures]
+    id: ID!
+    features: [GroupFeatures!]!
+    applyFeaturesSeperaely: Boolean!
+    cars: [Car]
+    name: String!
+    imageId: ID!
+    bodyHtml: String!
   }
 
-  type GroupFeatures {}
+  type GroupFeatures {
+    feature: String!
+  }
 
   type GroupMembership{
     Group
