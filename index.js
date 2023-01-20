@@ -13,13 +13,12 @@ const typeDefs = gql`
 
   type ManualGroup {
     Image
-    [GroupMembership!]
+    [Car]
   }
   type AutometicGroup {
     Image
-    [GroupMembership!]
+    [Car]
     [AutometicGroupFeatures]
-    applyFeaturesSeperately: Boolean!
   }
 
   type AutometicGroupFeatures {}
