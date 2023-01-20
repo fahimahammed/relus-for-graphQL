@@ -16,22 +16,17 @@ const typeDefs = gql`
     [GroupMembership!]
   }
   type AutometicGroup {
-    id: ID!
-    name: String!
-    imageId: ID!
-    bodyHtml: String!
-    memberships: [GroupMembership!]!
-    feature: [AutometicGroupFeatures!]!
+    Image
+    [GroupMembership!]
+    [AutometicGroupFeatures]
     applyFeaturesSeperately: Boolean!
   }
 
-  type AutometicGroupFeatures {
-    column: String!
-  }
+  type AutometicGroupFeatures {}
 
   type GroupMembership{
-    groupId: ID!
-    carId: ID!
+    Group
+    Car
   }
 `;
 
