@@ -11,17 +11,13 @@ const typeDefs = gql`
     make: String!
   }
 
-  type ManualGroup {
+  type Group {
     Image
     [Car]
-  }
-  type AutometicGroup {
-    Image
-    [Car]
-    [AutometicGroupFeatures]
+    [GroupFeatures]
   }
 
-  type AutometicGroupFeatures {}
+  type GroupFeatures {}
 
   type GroupMembership{
     Group
