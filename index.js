@@ -12,11 +12,8 @@ const typeDefs = gql`
   }
 
   type ManualGroup {
-    id: ID!
-    name: String!
-    imageId: ID!
-    bodyHtml: String!
-    memberships: [GroupMembership!]!
+    Image
+    [GroupMembership!]
   }
   type AutometicGroup {
     id: ID!
