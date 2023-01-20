@@ -21,6 +21,10 @@ const typeDefs = gql`
     bodyHtml: String!
   }
 
+  type GroupFeatureSet {
+    
+  }
+
   type GroupFeatures {
     feature: String!
   }
